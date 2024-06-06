@@ -12,7 +12,10 @@ var rootCmd = &cobra.Command{
 	Long:  "tu is a tiny 🤏🏾wrapper for the your package 📦 manager. It'll make managing 🖇️ your packages fun 😊 again!",
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) == 0 {
-			cmd.Help()
+			err := cmd.Help()
+			if err != nil {
+				os.Exit(1)
+			}
 		}
 	},
 }
