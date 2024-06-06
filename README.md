@@ -99,7 +99,7 @@ On the command line you can use `tu` to install, remove and update packages.
 
 You can install a package by using the `tu a` command.
 
-> [!INFO]
+> [!TIP]
 > Aliases for the `a` subcommand are `add`, `i`, `install` and `get`.
 
 ```sh
@@ -127,7 +127,7 @@ tu a -s neovim zsh
 
 You can remove a package by using the `tu d` command.
 
-> [!INFO]
+> [!TIP]
 > Aliases for the `d` subcommand are `remove`, `uninstall`, `rm`, `delete` and `del`.
 
 ```sh
@@ -144,7 +144,7 @@ tu d neovim zsh
 
 You can update all packages by using the `tu u` command.
 
-> [!INFO]
+> [!TIP]
 > Aliases for the `u` subcommand are `update`, `upgrade` and `up`.
 
 ```sh
