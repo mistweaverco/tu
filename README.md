@@ -4,13 +4,21 @@
   <p>tu is a tiny 🤏🏾 wrapper for your package 📦 manager.</p>
   <p> It'll make managing 🖇️ your packages fun 😊 again!</p>
 
+  <hr/>
+
   <a href="#why">Why?</a>
   <span> • </span>
   <a href="#install">Install</a>
   <span> • </span>
   <a href="#usage">Usage</a>
 
-  <p></p>
+  <hr/>
+
+  <p>Tu is <a href="https://en.wikipedia.org/wiki/Swahili_language">swahili</a>.</p>
+  <p>It means <em>only</em>, <em>just</em> and <em>simply</em> which all describe this package manager wrapper perfectly.</p>
+
+  <hr/>
+
 
 [![Go](https://img.shields.io/badge/Made%20with%20Go-00ADD8.svg?style=for-the-badge&logo=go&logoColor=ffffff)](https://golang.org)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/mistweaverco/tu?style=for-the-badge)](https://github.com/mistweaverco/tu/releases/latest)
