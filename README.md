@@ -82,7 +82,7 @@ sudo mv tu-macos /usr/local/bin/tu
 On Windows you can use the powershell `Invoke-WebRequest` cmdlet to download the binary.
 
 ```powershell
-Invoke-WebRequest -Uri https://github.com/mistweaverco/tu/releases/latest/download/tu-windows -OutFile shazam.exe
+Invoke-WebRequest -Uri https://github.com/mistweaverco/tu/releases/latest/download/tu.exe -OutFile tu.exe
 ```
 
 Then you can move the binary to a directory in your `$PATH`.
