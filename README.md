@@ -55,30 +55,18 @@ or use the following commands depending on your OS:
 
 ## Install on Linux
 
-On linux you can use `wget` to download the binary.
+On linux you can use `curl` command to execute the install script directly.
 
 ```sh
-wget -qO- https://github.com/mistweaverco/tu/releases/latest/download/tu-linux
-```
-
-Then you can move the binary to a directory in your `$PATH`.
-
-```sh
-sudo mv tu-linux /usr/bin/tu
+/bin/bash $(curl -fsSL https://raw.githubusercontent.com/mistweaverco/tu/HEAD/install.sh)
 ```
 
 ## Install on macOS
 
-On macOS you can use `wget` to download the binary.
+On macOS you can use `curl` command to execute the install script directly.
 
 ```sh
-wget -qO- https://github.com/mistweaverco/tu/releases/latest/download/tu-macos
-```
-
-Then you can move the binary to a directory in your `$PATH`.
-
-```sh
-sudo mv tu-macos /usr/local/bin/tu
+/bin/zsh $(curl -fsSL https://raw.githubusercontent.com/mistweaverco/tu/HEAD/install.sh)
 ```
 
 ## Install on Windows
@@ -87,16 +75,10 @@ sudo mv tu-macos /usr/local/bin/tu
 > To be honest I don't know if package management is a "real" thing on Windows,
 > but if it is, you can use `tu` as a wrapper for your choco?!
 
-On Windows you can use the powershell `Invoke-WebRequest` cmdlet to download the binary.
+On Windows you can use the powershell to execute the install script directly.
 
 ```powershell
-Invoke-WebRequest -Uri https://github.com/mistweaverco/tu/releases/latest/download/tu.exe -OutFile tu.exe
-```
-
-Then you can move the binary to a directory in your `$PATH`.
-
-```powershell
-Move-Item -Path .\tu.exe -Destination C:\Windows\System32\tu.exe
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/mistweaverco/tu/HEAD/install.ps1 -OutFile tu-install.ps1 | .\tu-install.ps1
 ```
 
 ## Usage
