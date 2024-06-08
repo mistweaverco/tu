@@ -28,11 +28,4 @@ func Execute() {
 }
 
 func init() {
-	// rootCmd.PersistentFlags().StringVar(&cfg.ConfigPath, "config", "shazam.yml", "config file")
-	// rootCmd.PersistentFlags().BoolVar(&cfg.Flags.DryRun, "dry-run", false, "dry run")
-	// rootCmd.PersistentFlags().BoolVar(&cfg.Flags.PullInExisting, "pull-in-existing", false, "pull in existing files")
-	// rootCmd.PersistentFlags().StringVar(&cfg.Flags.Root, "root", "", "root workspace")
-	// rootCmd.PersistentFlags().StringVar(&cfg.Flags.Only, "only", "", "only specific nodes matching a name")
-	// rootCmd.PersistentFlags().StringVar(&cfg.Flags.DotfilesPath, "dotfiles-path", "", "dotfiles path")
-	// rootCmd.PersistentFlags().StringVar(&cfg.Flags.Path, "path", "", "path to config file or dir")
 }

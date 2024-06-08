@@ -21,7 +21,7 @@ var removeCmd = &cobra.Command{
 
 func init() {
 	removeCmd.Flags().Bool("dry-run", false, "dry run mode")
-	removeCmd.Flags().BoolP("brew", "b", false, "use brews package manager")
+	removeCmd.Flags().BoolP("brew", "b", false, "use brew package manager")
 	removeCmd.Aliases = []string{"remove", "delete", "del", "uninstall", "rm"}
 	rootCmd.AddCommand(removeCmd)
 }

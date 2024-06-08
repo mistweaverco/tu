@@ -169,3 +169,24 @@ tu u
 > Maybe you want to update the mirrors before updating all packages.
 > Easy peasy, just pass the `-s` or `--sync` flag to `tu u`.
 
+### Search for a package
+
+You can search for a package by using the `tu q` command.
+
+> [!TIP]
+> Aliases for the `q` subcommand are `query` and `search`.
+
+```sh
+# Search for a package called flameshot
+tu q flameshot
+```
+
+> [!NOTE]
+> If you want to search for a package via Homebrew,
+> you can pass the `-b` or `--brew` flag to `tu q`.
+> This only works on macOS and Linux.
+
+> [!TIP]
+> Maybe you want to update the mirrors before searching for a package.
+> Easy peasy, just pass the `-s` or `--sync` flag to `tu q`.
+
