@@ -2,7 +2,7 @@ package tu
 
 import (
 	"github.com/mistweaverco/tu/internal/config"
-	"github.com/mistweaverco/tu/internal/pacman"
+	"github.com/mistweaverco/tu/internal/package_managers"
 	"github.com/spf13/cobra"
 )
 
@@ -15,7 +15,7 @@ var removeCmd = &cobra.Command{
 			DryRun: cmd.Flag("dry-run").Changed,
 			Brew:   cmd.Flag("b").Changed,
 		}
-		pacman.Remove(f, packages)
+		package_managers.Remove(f, packages)
 	},
 }
 

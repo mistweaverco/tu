@@ -2,7 +2,7 @@ package tu
 
 import (
 	"github.com/mistweaverco/tu/internal/config"
-	"github.com/mistweaverco/tu/internal/pacman"
+	"github.com/mistweaverco/tu/internal/package_managers"
 	"github.com/spf13/cobra"
 )
 
@@ -16,7 +16,7 @@ var updateCmd = &cobra.Command{
 			DryRun: cmd.Flag("dry-run").Changed,
 			Brew:   cmd.Flag("b").Changed,
 		}
-		pacman.Update(f)
+		package_managers.Update(f)
 	},
 }
 

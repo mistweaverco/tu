@@ -2,7 +2,7 @@ package tu
 
 import (
 	"github.com/mistweaverco/tu/internal/config"
-	"github.com/mistweaverco/tu/internal/pacman"
+	"github.com/mistweaverco/tu/internal/package_managers"
 	"github.com/spf13/cobra"
 )
 
@@ -16,7 +16,7 @@ var addCmd = &cobra.Command{
 			Sync:   cmd.Flag("sync").Changed,
 			DryRun: cmd.Flag("dry-run").Changed,
 		}
-		pacman.Add(f, packages)
+		package_managers.Add(f, packages)
 	},
 }
 
