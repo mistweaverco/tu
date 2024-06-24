@@ -13,7 +13,7 @@ var removeCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, packages []string) {
 		f := config.ConfigFlags{
 			DryRun: cmd.Flag("dry-run").Changed,
-			Brew:   cmd.Flag("b").Changed,
+			Brew:   cmd.Flag("brew").Changed,
 		}
 		package_managers.Remove(f, packages)
 	},
